@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація - QuizMaster</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <a href="/"><strong>QUIZ_MASTER</strong></a>
+    </div>
+    <nav class="main-nav">
+        <a href="/catalog.html">Каталог</a>
+        <a href="/about.html">Про нас</a>
+        <a href="/contacts.html">Контакти</a>
+    </nav>
+    <nav id="auth-links"></nav>
+</header>
+
+    <div class="container">
+        <div class="card auth-form">
+            <h2>Реєстрація</h2>
+            <form id="regForm">
+                <input type="text" id="username" placeholder="Логін" required>
+                <input type="password" id="password" placeholder="Пароль" required>
+                <button type="submit">Зареєструватися</button>
+                <p id="msg" style="color: red; margin-top: 10px;"></p>
+            </form>
+            <p style="margin-top: 15px; text-align: center;">Вже є акаунт? <a href="/login.html">Увійти</a></p>
+        </div>
+    </div>
+
+<script type="module" src="/js/auth.js"></script>
+<script type="module" src="/js/register.js"></script>
+</body>
+</html>

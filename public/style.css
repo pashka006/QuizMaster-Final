@@ -1,0 +1,183 @@
+/* =========================================
+   ЗАГАЛЬНІ НАЛАШТУВАННЯ (General Styles)
+   ========================================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* =========================================
+   ШАПКА ТА НАВІГАЦІЯ (Header & Navigation)
+   ========================================= */
+header {
+    background: #222;
+    color: #fff;
+    padding: 10px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main-nav {
+    display: flex;
+    gap: 20px;
+}
+
+/* Стилі для мобільних пристроїв (адаптивність) */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .main-nav {
+        gap: 10px;
+        font-size: 0.9rem;
+    }
+}
+
+header .logo a {
+    font-size: 1.2rem;
+    margin-left: 0;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: #4da6ff;
+    text-decoration: none;
+}
+
+/* =========================================
+   ОСНОВНИЙ КОНТЕНТ (Main Content & Layout)
+   ========================================= */
+.container {
+    flex: 1;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* =========================================
+   ФОРМИ ТА КНОПКИ (Forms & Buttons)
+   ========================================= */
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button {
+    background: #0066cc;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #005bb5;
+}
+
+.auth-form {
+    max-width: 400px;
+    margin: 40px auto;
+}
+
+/* =========================================
+   ФУТЕР (Footer)
+   ========================================= */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #ddd;
+    margin-top: auto;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* =========================================
+   СТИЛІ ДЛЯ ВІКТОРИНИ (Quiz Styles)
+   ========================================= */
+.question-block {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+.answer-option {
+    display: block;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+/* Стилі для режиму Kahoot */
+.kahoot-btn {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+    font-size: 1.1rem;
+    background: #f0f0f0;
+    color: #333;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.kahoot-btn:hover {
+    background: #e0e0e0;
+    border-color: #bbb;
+}
+
+.mode-btn {
+    padding: 15px;
+    font-size: 1.1rem;
+    margin: 10px;
+    width: 45%;
+    border-radius: 8px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.mode-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

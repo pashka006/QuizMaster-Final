@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мій Профіль - QuizMaster</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { padding: 10px; border: 1px solid #ccc; text-align: left; }
+        th { background: #eee; }
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <a href="/"><strong>QUIZ_MASTER</strong></a>
+    </div>
+    <nav class="main-nav">
+        <a href="/catalog.html">Каталог</a>
+        <a href="/about.html">Про нас</a>
+        <a href="/contacts.html">Контакти</a>
+    </nav>
+    <nav id="auth-links"></nav>
+</header>
+    <div class="container">
+        <div class="card">
+            <h2>Особистий кабінет</h2>
+            <p>Тут відображається історія пройдених вами тестів:</p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Назва вікторини</th>
+                        <th>Ваш бал</th>
+                        <th>Дата проходження</th>
+                    </tr>
+                </thead>
+                <tbody id="results-table">
+                    <tr><td colspan="3">Завантаження даних...</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer>&copy; 2026 QuizMaster System.</footer>
+
+<script type="module" src="/js/auth.js"></script>
+<script type="module" src="/js/profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адмін-панель - QuizMaster</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        select { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ddd; border-radius: 6px; font-size: 1rem; background: white; }
+        .card h2 { margin-bottom: 20px; color: #333; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <a href="/"><strong>QUIZ_MASTER</strong></a>
+    </div>
+    <nav class="main-nav">
+        <a href="/catalog.html">Каталог</a>
+        <a href="/about.html">Про нас</a>
+        <a href="/contacts.html">Контакти</a>
+    </nav>
+    <nav id="auth-links"></nav>
+</header>
+
+<div class="container"><div class="card">
+    <h2>Створення нової вікторини</h2>
+    <form id="addQuizForm">
+        <input type="text" id="qTitle" placeholder="Назва вікторини" required>
+        <input type="text" id="qDesc" placeholder="Короткий опис" required>
+        <button type="submit">Створити вікторину</button>
+    </form>
+
+    <hr style="margin: 30px 0;">
+
+    <h2>Додати запитання до вікторини</h2>
+    <form id="addQuestionForm">
+        <select id="quizSelect" required>
+            <option value="">Оберіть вікторину...</option>
+        </select>
+        <input type="text" id="qText" placeholder="Текст запитання" required>
+        <input type="text" id="ansCorrect" placeholder="Правильна відповідь" required>
+        <input type="text" id="ansWrong1" placeholder="Неправильна №1" required>
+        <input type="text" id="ansWrong2" placeholder="Неправильна №2" required>
+        <button type="submit" style="background: #28a745;">Зберегти запитання</button>
+    </form>
+</div>
+</div>
+
+<footer>&copy; 2026 QuizMaster System.</footer>
+
+<script type="module" src="/js/auth.js"></script>
+<script type="module" src="/js/admin.js"></script>
+</body>
+</html>
